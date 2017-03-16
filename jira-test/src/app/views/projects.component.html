@@ -1,4 +1,4 @@
-<table class="table">
+<table class="table table-bordered">
   <thead>
   <tr>
     <th>Cliente</th>
@@ -13,4 +13,12 @@
     <th>Acción</th>
   </tr>
   </thead>
+  <tbody>
+    <tr *ngIf="!projects">
+      <td colspan="10">No hay proyectos asociados</td>
+    </tr>
+    <tr *ngFor="let project of projects">
+      <td>{{project.client}}</td>
+    </tr>
+  </tbody>
 </table>

@@ -8,7 +8,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { ProjectService } from './services/project.service';
 
 import { AppComponent }  from './app.component';
-import { DashboardComponent } from './components/dashboard.component';
+import { ProjectsComponent } from './components/projects.component';
 
 import { AppRoutingModule }  from './app-routing.module';
 
@@ -26,7 +26,7 @@ import { InMemoryDataService }  from './in-memory/in-memory-project.service';
   ],
   declarations: [ 
     AppComponent,
-    DashboardComponent
+    ProjectsComponent
   ],
   bootstrap:    [ AppComponent ],
   providers:    [ 
