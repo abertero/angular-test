@@ -1,6 +1,6 @@
 import { InMemoryDbService } from 'angular-in-memory-web-api';
 
-export class InMemoryDataService implements InMemoryDbService {
+export class InMemoryProjectService implements InMemoryDbService {
   createDb() {
     let projects = [
       {id: 1, client: 'cl.claro', jiraId: 'CL.CLARO.2016.011-2', description: 'Roaming Claro en redes WOM', dueDate: '2017-04-28T00:00:00.000Z', state: 'PROD', billingPercentage: 50, billingPossible: 100, comments: 'Hito 2/2: USD 25.000: Hito en Curso', amount: 25000, action: 'Iniciar facturación por segundo 50% -> Ignacio'},

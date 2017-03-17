@@ -1,0 +1,21 @@
+<table class="table table-bordered">
+  <thead>
+  <tr>
+    <th>Self</th>
+    <th>Id</th>
+    <th>Key</th>
+    <th>Name</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngIf="!projectsResponse">
+      <td colspan="4">No hay proyectos asociados</td>
+    </tr>
+    <tr *ngFor="let project of projectsResponse">
+      <td>{{project.self}}</td>
+      <td>{{project.id}}</td>
+      <td>{{project.key}}</td>
+      <td>{{project.name}}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,4 +1,4 @@
-export class Project {
+export class ProjectRow {
   client: string;
   jiraId: string;
   description: string;
