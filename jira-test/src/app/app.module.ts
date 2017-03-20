@@ -14,8 +14,8 @@ import { ProjectResponseComponent } from './components/project-response.componen
 
 import { AppRoutingModule }  from './app-routing.module';
 
-import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryProjectService }  from './in-memory/in-memory-project.service';
+//import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+//import { InMemoryProjectService }  from './in-memory/in-memory-project.service';
 
 @NgModule({
   imports:      [ 
@@ -23,7 +23,7 @@ import { InMemoryProjectService }  from './in-memory/in-memory-project.service';
     BrowserModule,
     FormsModule,
     HttpModule,
-    InMemoryWebApiModule.forRoot(InMemoryProjectService),
+    //InMemoryWebApiModule.forRoot(InMemoryProjectService),
     AppRoutingModule
   ],
   declarations: [ 

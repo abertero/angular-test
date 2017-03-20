@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Project } from '../beans/project';
+import { ProjectRow } from '../beans/project-row';
 import { ProjectService } from '../services/project.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { ProjectService } from '../services/project.service';
 })
 
 export class ProjectsComponent implements OnInit {
-  projects:Project[];
+  projects:ProjectRow[];
   constructor(
     private projectService: ProjectService) { }
 

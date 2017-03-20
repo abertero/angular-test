@@ -19,9 +19,10 @@ export class JiraService {
     return new Headers({'Content-Type': 'application/json', 'Authentication': 'Base '+authStrEnc});
   }
 
-  getProjects(): ProjectResponse[] {
+  getProjects(): Promise<ProjectResponse[]> {
     var projectUrl = this.jiraUrl+"project"
-    return this.http.get(projectUrl, {headers: this.headers}).toPromise().then(response => response.json().data as ProjectResponse[]).catch(this.handleError);
+    var headers = this.getHeaders();
+    return this.http.get(projectUrl, {headers: headers}).toPromise().then(response => response.json().data as ProjectResponse[]).catch(this.handleError);
   }
 
   getUrl(): string {
